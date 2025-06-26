@@ -1344,6 +1344,44 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-size: 18px;
   }
 
+  /* Download Button Styles */
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: var(--bg-gradient-onyx);
+  color: var(--white-2);
+  border-radius: 8px;
+  margin: 15px auto;
+  width: 80%;
+  max-width: 200px;
+  transition: var(--transition-1);
+  text-align: center;
+  font-size: var(--fs-7);
+}
+
+.download-btn:hover {
+  background: var(--bg-gradient-jet);
+  transform: translateY(-2px);
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .download-btn {
+    width: 90%;
+    padding: 10px 15px;
+    margin: 15px auto;
+    display: flex !important; /* Force show on mobile */
+  }
+  
+  /* Ensure sidebar shows the button when expanded */
+  [data-sidebar].active .download-btn {
+    display: flex !important;
+  }
+}
+
 
 
   /**

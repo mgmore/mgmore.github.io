@@ -7,6 +7,16 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
+// In your existing JavaScript, add this after sidebar variables
+const downloadBtn = document.querySelector('.download-btn');
+
+// Make sure button is visible when sidebar is active on mobile
+sidebarBtn.addEventListener('click', function() {
+  if (sidebar.classList.contains('active')) {
+    downloadBtn.style.display = 'flex';
+  }
+});
+
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
