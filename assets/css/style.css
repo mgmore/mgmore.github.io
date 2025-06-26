@@ -293,6 +293,22 @@ article.active {
 }
 
 
+.download-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  background: var(--bg-gradient-onyx);
+  color: var(--white-2);
+  border-radius: 8px;
+  margin: 15px auto;
+  width: fit-content;
+  transition: var(--transition-1);
+}
+
+.download-btn:hover {
+  background: var(--bg-gradient-jet);
+}
 
 
 
@@ -1030,6 +1046,7 @@ main {
 
 
 
+
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
@@ -1114,6 +1131,22 @@ main {
   line-height: 1.6;
 }
 
+/* Project images aspect ratio */
+.project-img img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* Blog category colors */
+.blog-category[data-category="Machine Learning"] {
+  background: var(--bg-gradient-ml);
+}
+.blog-category[data-category="Data Science"] {
+  background: var(--bg-gradient-data);
+}
+.blog-category[data-category="Cybersecurity"] {
+  background: var(--bg-gradient-cyber);
+}
 
 
 
