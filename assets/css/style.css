@@ -349,8 +349,12 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 50%;       /* ← Make it round */
+  width: 80px;              /* ← Ensure width and height are equal */
+  height: 80px;
+  overflow: hidden;         /* ← Hide any overflow from the image */
 }
+
 
 .info-content .name {
   color: var(--white-2);
